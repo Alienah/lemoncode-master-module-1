@@ -1,0 +1,36 @@
+@import "./scss/mixins";
+@import "./scss/variables";
+
+.container {
+  display: flex;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  border-radius: $size1;
+  padding: $size2;
+  margin: $size2;
+
+  @include centerContent;
+}
+
+.base-color {
+  width: 200px;
+  & > span.color-box-text {
+    color: white;
+  }
+}
+
+.container-1 {
+  @include createColors($baseColor1);
+}
+
+.container-2 {
+  @include createColors($baseColor2);
+}
+
+.container-3 {
+  @include createColors($baseColor3);
+}

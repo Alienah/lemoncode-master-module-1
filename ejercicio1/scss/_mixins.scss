@@ -1,0 +1,27 @@
+@mixin centerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin createColors($baseColor, $amount: 5%) {
+  .base-color {
+    background-color: $baseColor;
+  }
+
+  .color-box-text {
+    color: invert($baseColor, 90%);
+  }
+
+  @for $var from 1 through 4 {
+    .darken-#{$var} {
+      background-color: darken($baseColor, + $amount * $var);
+    }
+  }
+
+  @for $var from 1 through 4 {
+    .lighten-#{$var} {
+      background-color: lighten($baseColor, $amount * $var);
+    }
+  }
+}
