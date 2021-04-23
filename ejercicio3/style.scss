@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import "../scss/mixins";
+@import "../scss/variables";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: $size4;
+}
+
+.nav_list {
+  padding: 0;
+  background-color: $darkGreenPrimary;
+  color: $darkGreenInverted;
+  list-style: none;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.nav_item {
+  @include centerContent;
+  padding: $size5;
+  flex: 1;
+  &:hover {
+    background-color: $darkGreenAction;
+    cursor: pointer;
+  }
+}
+
+
