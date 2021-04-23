@@ -19,7 +19,7 @@
 .base-color {
   width: 200px;
   & > span.color-box-text {
-    color: white;
+    color: $mainLightColor;
   }
 }
 
