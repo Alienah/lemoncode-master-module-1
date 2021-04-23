@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&display=swap');
+
+// Colors
+
+$baseColor: blue;
+$importantColor: darken($baseColor, 30%);
+$importantLightColor: invert(darken($baseColor, 30%));
+$warningColor: lighten($baseColor, 35%);
+
+// Font
+$primaryFontFamily: 'Architects Daughter', cursive;
+$secondaryFontFamily: 'Amatic SC', cursive;
+
+// Box styles
+$borderRadius: 8px;
+$boxShadow:  getShadoWithHorizontalLenght(24px);

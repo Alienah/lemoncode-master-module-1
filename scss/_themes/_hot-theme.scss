@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+// Colors
+
+$baseColor: red;
+$importantColor: darken($baseColor, 30%);
+$importantLightColor: invert(darken($baseColor, 30%));
+$warningColor: lighten($baseColor, 35%);
+
+// Font
+
+$primaryFontFamily: 'Roboto', sans-serif;
+$secondaryFontFamily: 'Roboto Mono', monospace;
+
+// Box styles
+$borderRadius: 2px;
+$boxShadow:  getShadoWithHorizontalLenght(-24px);

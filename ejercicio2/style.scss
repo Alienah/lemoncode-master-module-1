@@ -1,0 +1,54 @@
+@import "../scss/functions";
+@import "../scss/mixins";
+@import "../scss/variables";
+
+// @import "../scss/_themes/hot-theme";
+@import "../scss/_themes/cold-theme";
+
+body {
+  font-family: $primaryFontFamily;
+  @include regularfontStyles;
+}
+
+.container {
+  padding: $size6;
+}
+
+.theme-container > * {
+  margin: $size2 0;
+}
+
+.color-box, .font-item, .shadow-box {
+  padding: $size2;
+}
+
+.box {
+  width: 130px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: $borderRadius;
+  display: flex;
+  align-items: center;
+  padding-left: $size4;
+}
+
+.color-box.base {
+  background-color: $baseColor;
+}
+
+.color-box.important {
+  background-color: $importantColor;
+  color: $importantLightColor;
+}
+
+.color-box.warning {
+  background-color: $warningColor;
+}
+
+.secondary-text {
+  font-family: $secondaryFontFamily;
+}
+
+.shadow-box {
+  box-shadow: $boxShadow;
+}

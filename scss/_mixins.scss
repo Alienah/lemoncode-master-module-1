@@ -25,3 +25,12 @@
     }
   }
 }
+
+@mixin regularfontStyles {
+  font-weight: 400;
+  font-size: 19px;
+}
+
+@mixin boldfontStyles {
+  font-weight: 700;
+}
