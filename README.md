@@ -14,6 +14,6 @@ Crear dos temas distintos y mostrar los resultados en una página.
 
 Crear la barra de navegación de la imagen usando Flexbox.
 
-@ Ejercicio 4: 
+# Ejercicio 4: 
 
 Creamos cards con Grid CSS.
