@@ -1,0 +1,76 @@
+@import "../scss/fonts";
+@import "../scss/mixins";
+@import "../scss/variables";
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $robotoFamily;
+}
+
+.cards {
+  margin: auto;
+  padding: $size6;
+  list-style: none;
+
+  max-width: 1260px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  gap: $size7;
+
+  @media (min-width: $break1) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    justify-items: center;
+    align-content: space-around;
+  }
+
+  @media (min-width: $break2) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.card {
+  width: 100%;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card_img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_info-container {
+  padding: $size4;
+  display: flex;
+  flex-direction: column;
+
+   & > * {
+     margin: $size2 0;
+   }
+
+  .card_date-container {
+    align-self: flex-end;
+    .date {
+      color: $brightGreen;
+      font-weight: $bold;
+      margin-left: $size1;
+    }
+  }
+
+  .card_link-button {
+    background-color: $brightGreen;
+    color: $mainLightColor;
+    text-decoration: none;
+    padding: $size4;
+    @include centerContent;
+    font-size: 19px;
+    font-weight: $bold;
+  }
+}

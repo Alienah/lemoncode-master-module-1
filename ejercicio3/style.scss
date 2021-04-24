@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import "../scss/fonts";
 @import "../scss/mixins";
 @import "../scss/variables";
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $robotoFamily;
   padding: $size4;
 }
 
@@ -14,7 +14,7 @@ body {
   list-style: none;
   font-weight: 700;
 
-  @media (min-width: 768px) {
+  @media (min-width: $break1) {
     display: flex;
   }
 }

@@ -6,6 +6,7 @@ $size3: 12px;
 $size4: 16px;
 $size5: 20px;
 $size6: 24px;
+$size7: 32px;
 
 // Colors
 
@@ -17,4 +18,11 @@ $baseColor3: green;
 
 $darkGreenPrimary: #1a737d;
 $darkGreenAction: #344454;
-$darkGreenInverted: #e0eaed
+$darkGreenInverted: #e0eaed;
+
+$brightGreen: #82c152;
+
+// Breakpoints
+
+$break1: 768px;
+$break2: 948px;
